@@ -1,0 +1,121 @@
+.callback-form
+  width: 100%
+
+  &__wrapper
+    height: 514px
+    overflow: hidden
+    padding-top: 110px
+    +adaptive($mobile)
+      height: auto
+      padding-top: 0
+
+  &__block
+    display: flex
+    align-items: center
+    width: 100%
+    height: 402px
+    border-radius: 20px
+    padding-left: 78px
+    background-image: url("../img/wallpapers/pink-form-bg.png")
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    +adaptive($mobile)
+      padding: 34px 14px
+      height: auto
+    div[role='form']
+      +adaptive($mobile)
+        width: 100%
+
+    .close
+      display: none
+      width: 32px
+      height: 32px
+      background-image: url("../img/icons/svg/x.svg")
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      position: absolute
+      top: 20px
+      right: 20px
+
+  &__title
+    font-family: "Geometria", sans-serif
+    font-style: normal
+    font-weight: 900
+    font-size: 45px
+    line-height: 57px
+    letter-spacing: 0.05em
+    color: $white
+    margin-bottom: 31px
+    +adaptive($mobile)
+      font-size: 32px
+      line-height: 40px
+
+  &__form
+    width: 100%
+    max-width: 633px
+    height: 268px
+    +adaptive($mobile)
+      max-width: 100%
+      height: auto
+
+  &__inputs
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 24px
+    +adaptive($mobile)
+      margin-bottom: 0
+
+    span
+      display: block
+      width: 49%
+      overflow: hidden
+      +adaptive($mobile)
+        width: 100%
+        margin-bottom: 15px
+      input
+        width: 100%
+      .wpcf7-not-valid-tip
+        color: $white
+
+  &__submit
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__button
+    outline: none
+    border: none
+    +adaptive($mobile)
+      margin-top: 36px
+
+  &__disclaimer
+    width: 100%
+    max-width: 397px
+    padding-left: 50px
+    font-family: "Geometria", sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 18px
+    color: #FAFAFA
+    background-image: url("../img/icons/smiling_face_with_sunglasses.png")
+    background-size: 36px
+    background-position: left
+    background-repeat: no-repeat
+    +adaptive($mobile)
+      font-size: 11px
+      line-height: 14px
+      background-size: contain
+
+  &__wallpaper
+    +adaptive(1320px)
+      display: none
+
+//contact form 7
+.wpcf7-response-output
+  display: none

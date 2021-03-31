@@ -1,0 +1,36 @@
+.bloggers
+  &__slider
+    width: 100%
+    overflow: unset
+    padding-bottom: 140px !important
+  &__slide
+    width: 421px !important
+    +adaptive($mobile)
+      width: 100% !important
+  &__pagination
+    max-width: 598px
+    left: calc(50% - 299px) !important
+    top: calc(100% - 70px) !important
+    +adaptive($mobile)
+      max-width: 200px
+      left: calc(50% - 100px) !important
+      top: calc(100% - 70px) !important
+  &__button-next
+    right: calc(50% - 299px - 40px) !important
+    +adaptive($mobile)
+      right: calc(50% - 100px - 40px) !important
+  &__button-prev
+    left: calc(50% - 299px - 40px) !important
+    color: #BABABA !important
+    +adaptive($mobile)
+      left: calc(50% - 100px - 40px) !important
+  &__button-next, &__button-prev
+    top: calc(100% - 68px) !important
+    color: #BABABA !important
+    &:focus
+      outline: none !important
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill
+  background: #FF2B6A !important
+
+

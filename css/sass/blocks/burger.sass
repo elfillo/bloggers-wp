@@ -1,0 +1,31 @@
+.burger 
+  width: 36px
+  height: 36px
+  display: none
+  flex-direction: column
+  justify-content: space-between
+  cursor: pointer
+  position: relative
+  +adaptive($mobile)
+    display: flex
+  span
+    display: block
+    width: 100%
+    border: 2px solid $black
+    transition : 0.2s
+  &_is-active
+    display: block
+    span
+      &:nth-child(1)
+        transform: rotate(45deg)
+        position: absolute
+        top: 50%
+        border: 2px solid $white
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        transform: rotate(-45deg)
+        position: absolute
+        top: 50%
+        border: 2px solid $white
+

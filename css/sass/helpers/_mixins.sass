@@ -1,0 +1,61 @@
+// Media mixin
+@mixin mw($width) 
+    @media screen and (max-width: $width + 'px') 
+        @content
+
+@mixin miw($width)
+    @media screen and (min-width: $width + 'px') 
+        @content
+        
+@mixin mmw($max-width, $min-width) 
+    @media (max-width: $max-width + 'px') and (min-width: $min-width + 'px') 
+        @content
+    
+    
+// Font mixin
+@mixin font($name, $size, $weight, $style) 
+    @font-face 
+        font-family: $name
+        src: url('../fonts/'+ $name + '-'+ $size + '.woff2') format('woff2')
+        src: url('../fonts/'+ $name + '-'+ $size + '.woff') format('woff')
+        font-weight: $weight
+        font-style: $style
+
+// Position mixin
+@mixin centered($axis: 'both') 
+    position: absolute
+    @if $axis=='both' 
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    @if $axis=='x' 
+        left: 50%
+        transform: translateX(-50%)
+    @if $axis=='y' 
+        top: 50%
+        transform: translateY(-50%)
+    
+@function rem($size)
+  @return ($size  / 16)+rem
+
+@mixin adaptive($res)
+    @media screen and (max-width: $res)
+        @content
+
+@mixin fullImg
+    img
+        width: calc(100% + 20px)
+        margin-left: -10px
+
+@mixin cutText($length)
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: $length
+    -webkit-box-orient: vertical
+
+@mixin b_image($url, $size: contain, $position: center, $repeat: no-repeat)
+    background-image: url("../img/" + $url)
+    background-size: #{$size}
+    background-position: #{$position}
+    background-repeat: #{$repeat}

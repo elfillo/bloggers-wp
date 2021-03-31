@@ -1,0 +1,64 @@
+.header
+  width: 100%
+  margin-bottom: 50px
+  +adaptive($mobile)
+    margin-bottom: 10px
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 24px 0
+  &__logo
+    width: 183px
+    height: 64px
+    +adaptive($mobile)
+      width: 163px
+      height: 57px
+  &__menu
+    +adaptive($mobile)
+      display: none
+  &__callback
+    +adaptive($mobile)
+      display: none
+
+  &_open-mobile-menu
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+    background-image: url('../img/wallpapers/mobile-menu-bg.png')
+    background-size: cover
+    background-repeat: no-repeat
+    .header
+      &__row
+        flex-wrap: wrap
+        height: 100%
+        padding: 20px 0
+      &__logo
+        width: 163px
+        height: 57px
+        +b_image('icons/svg/logo-mobile.svg')
+        img
+          display: none
+      &__menu
+        display: flex
+        align-items: center
+        justify-content: center
+        max-width: 100%
+        height: calc(100% - 110px)
+        order: 2
+        ul
+          height: auto
+          flex-direction: column
+          justify-content: center
+          li
+            margin-bottom: 40px
+            a
+              color: $white
+      &__callback
+        display: flex
+        order: 3
+        margin: auto
+

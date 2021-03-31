@@ -1,0 +1,32 @@
+.nav-menu
+  height: 100%
+  width: 100%
+  max-width: 591px
+
+  &__list
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    li
+      list-style: none
+
+      &:hover
+        a
+          color: $coral
+
+      a
+        color: $black
+
+    li.active
+      display: block
+      position: relative
+
+      &::after
+        display: block
+        content: ''
+        position: absolute
+        width: 80%
+        height: 3px
+        background-color: $coral
+        left: 10%

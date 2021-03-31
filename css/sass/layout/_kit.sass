@@ -1,0 +1,324 @@
+.title
+  &_h1
+    font-family: Geometria, sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 55px
+    line-height: 58px
+    color: $black
+    +adaptive($mobile)
+      font-size: 28px
+      line-height: 1.05
+
+  &_h2
+    font-family: Geometria, sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 32px
+    color: $black
+    +adaptive($mobile)
+      font-size: 16px
+      line-height: 1.4
+
+  &-section
+    font-family: Geometria, sans-serif
+    font-size: 100px
+    font-weight: 900
+    color: transparent
+    -webkit-text-stroke: 2px $grey
+    line-height: 126px
+    letter-spacing: 0.02em
+    margin-left: -60px
+    margin-bottom: 100px
+    +adaptive(1600px)
+      margin-left: 0
+    +adaptive($mobile)
+      font-size: 38px
+      line-height: 48px
+      margin-left: 0
+      margin-bottom: 35px
+
+    &_hidden
+      margin-bottom: -40px
+      +adaptive($mobile)
+        margin-bottom: -15px
+
+.text-color
+  &_coral
+    color: $coral
+
+  &_orange
+    color: $orange
+
+  &_blue
+    color: $blue
+
+.bc
+  &_grey
+    background-color: $grey
+
+  &_coral
+    background-color: $coral
+
+  &_orange
+    background-color: $orange
+
+  &_blue
+    background-color: $blue
+
+.btn
+  width: 163px
+  height: 53px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: 'Gilroy', sans-serif
+  color: $white
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 21px
+  border-radius: 65px
+  cursor: default
+  +adaptive($mobile)
+    width: 290px
+
+  &:disabled
+    background: $grey
+    box-shadow: none
+
+  &_coral
+    background-color: $coral
+    box-shadow: 0 7px 10px rgba(255, 43, 106, 0.2)
+
+    &:hover
+      box-shadow: 0 8px 15px rgba(255, 43, 106, 0.3)
+
+    &:focus
+      border: 2px solid $black-dark
+
+  &_blue
+    background-color: $blue
+    box-shadow: 0 7px 10px rgba(44, 128, 255, 0.2)
+
+    &:hover
+      box-shadow: 0 8px 15px rgba(44, 128, 255, 0.3)
+
+    &:focus
+      border: 2px solid $black-dark
+
+  &_slim
+    height: 45px
+
+.btn-circle
+  display: block
+  width: 50px
+  height: 50px
+  background-image: url("../img/icons/svg/btn-circle-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/btn-circle-hover.svg")
+
+  &:focus
+    background-image: url("../img/icons/svg/btn-circle-focused.svg")
+
+  &:disabled
+    background-image: url("../img/icons/svg/btn-circle-disabled.svg")
+
+.soc-btn
+  &_square
+    width: 50px
+    height: 50px
+    +adaptive($mobile)
+      width: 35px
+      height: 35px
+      background-size: contain
+
+    &:focus
+      outline: none
+
+  &_circle
+    width: 68px
+    height: 68px
+    border-radius: 100%
+    background-position: center
+    background-size: contain
+    +adaptive($mobile)
+      width: 50px
+      height: 50px
+
+
+    &:hover
+      position: relative
+
+      &::after
+        display: block
+        content: ''
+        font-family: Geometria, sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 20px
+        color: $grey-dark
+        position: absolute
+        top: calc(50% - 10px)
+        left: 100%
+
+    &:focus
+      outline: none
+
+.youtube
+  background-image: url("../img/icons/svg/yt-square-no-color-normal.svg")
+
+  &_colored
+    background-image: url("../img/icons/svg/yt-square-colored-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/yt-square-hover.svg")
+
+  &:focus
+    border-radius: 100%
+    border: 2px solid $blue-dark
+
+  &:disabled
+    background-image: url("../img/icons/svg/yt-square-disabled.svg")
+
+.youtube-circle
+  background-image: url("../img/icons/svg/yt-circle-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/yt-circle-hover.svg")
+
+    &::after
+      content: 'YouTube'
+
+  &:focus
+    background-image: url("../img/icons/svg/yt-circle-focused.svg")
+
+  &:disabled
+    background-image: url("../img/icons/svg/yt-circle-disabled.svg")
+
+.vk
+  background-image: url("../img/icons/svg/vk-square-no-color-normal.svg")
+
+  &_colored
+    background-image: url("../img/icons/svg/vk-square-colored-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/vk-square-hover.svg")
+
+  &:focus
+    border-radius: 100%
+    border: 2px solid $blue-dark
+
+  &:disabled
+    background-image: url("../img/icons/svg/vk-square-disabled.svg")
+
+.vk-circle
+  background-image: url("../img/icons/svg/vk-circle-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/vk-circle-hover.svg")
+
+    &:after
+      content: 'Vk'
+
+  &:focus
+    background-image: url("../img/icons/svg/vk-circle-focused.svg")
+
+  &:disabled
+    background-image: url("../img/icons/svg/vk-circle-disabled.svg")
+
+.inst
+  background-image: url("../img/icons/svg/inst-square-no-color-normal.svg")
+
+  &_colored
+    background-image: url("../img/icons/svg/inst-square-colored-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/inst-square-hover.svg")
+
+  &:focus
+    border-radius: 100%
+    border: 2px solid $blue-dark
+
+  &:disabled
+    background-image: url("../img/icons/svg/inst-square-disabled.svg")
+
+.inst-circle
+  background-image: url("../img/icons/svg/inst-circle-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/inst-circle-hover.svg")
+
+    &:after
+      content: 'Instagram'
+
+  &:focus
+    background-image: url("../img/icons/svg/inst-circle-focused.svg")
+
+  &:disabled
+    background-image: url("../img/icons/svg/inst-circle-disabled.svg")
+
+.fb
+  background-image: url("../img/icons/svg/fb-square-no-color-normal.svg")
+
+  &_colored
+    background-image: url("../img/icons/svg/fb-square-colored-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/fb-square-hover.svg")
+
+  &:focus
+    border-radius: 100%
+    border: 2px solid $blue-dark
+
+  &:disabled
+    background-image: url("../img/icons/svg/fb-square-disabled.svg")
+
+.fb-circle
+  background-image: url("../img/icons/svg/fb-circle-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/fb-circle-hover.svg")
+
+    &:after
+      content: 'Facebook'
+
+  &:focus
+    background-image: url("../img/icons/svg/fb-circle-focused.svg")
+
+  &:disabled
+    background-image: url("../img/icons/svg/fb-circle-disabled.svg")
+
+.twitter
+  background-image: url("../img/icons/svg/twitter-square-no-color-normal.svg")
+
+  &_colored
+    background-image: url("../img/icons/svg/twitter-square-colored-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/twitter-square-hover.svg")
+
+  &:focus
+    border-radius: 100%
+    border: 2px solid $blue-dark
+
+  &:disabled
+    background-image: url("../img/icons/svg/twitter-square-disabled.svg")
+
+.twitter-circle
+  background-image: url("../img/icons/svg/twitter-circle-normal.svg")
+
+  &:hover
+    background-image: url("../img/icons/svg/twitter-circle-hover.svg")
+
+    &:after
+      content: 'Twitter'
+
+  &:focus
+    background-image: url("../img/icons/svg/twitter-circle-focused.svg")
+
+  &:disabled
+    background-image: url("../img/icons/svg/twitter-circle-disabled.svg")

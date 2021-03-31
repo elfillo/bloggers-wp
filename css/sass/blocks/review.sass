@@ -1,0 +1,78 @@
+.review
+  &__list
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+  &__item
+    margin-bottom: 43px
+    margin-right: 20px
+    +adaptive($mobile)
+      margin-bottom: 15px
+
+  &__button
+    width: 212px
+    margin: auto
+
+.review-card
+  width: 100%
+  max-width: 715px
+  height: 238px
+  display: flex
+  justify-content: space-between
+  padding: 40px
+  background: $white
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12)
+  border-radius: 20px
+  +adaptive($mobile)
+    max-width: 288px
+    height: 240px
+    padding: 12px
+
+  &__avatar
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100px
+    height: 100px
+    border-radius: 100%
+    margin-right: 45px
+    +adaptive($mobile)
+      width: 40px
+      height: 40px
+      margin-right: 18px
+
+    img
+      width: 66px
+      height: 66px
+      +adaptive($mobile)
+        width: 26px
+        height: 26px
+
+  &__content
+    width: 100%
+    max-width: 490px
+    font-family: "Geometria", sans-serif
+    +adaptive($mobile)
+      max-width: 190px
+
+  &__name
+    width: 100%
+    font-weight: 600
+    font-size: 22px
+    line-height: 28px
+    color: $black
+    margin-bottom: 11px
+    +adaptive($mobile)
+      font-size: 14px
+      line-height: 18px
+
+  &__text
+    width: 100%
+    font-size: 18px
+    line-height: 23px
+    color: $black-dark
+    overflow-y: scroll
+    +adaptive($mobile)
+      font-size: 12px
+      line-height: 16px

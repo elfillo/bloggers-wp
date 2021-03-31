@@ -1,0 +1,91 @@
+.footer
+  width: 100%
+
+  &__container
+    position: relative
+
+  &-card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 475px
+    height: 398px
+    background: $white
+    font-family: "Geometria", sans-serif
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.12)
+    border-radius: 20px
+    margin-top: 48px
+    position: absolute
+    z-index: 999
+    padding: 59px 43px
+    +adaptive($mobile)
+      width: 290px
+      height: 429px
+      padding: 41px 18px
+
+    &__contacts
+      //margin-bottom: 52px
+
+    &__contact
+      margin-bottom: 20px
+      padding-left: 50px
+      font-size: 18px
+      line-height: 23px
+      font-weight: bold
+      color: $black-dark
+      position: relative
+
+      a
+        color: inherit
+
+      &::before
+        display: block
+        content: ''
+        width: 22px
+        height: 22px
+        position: absolute
+        left: -50px
+        top: 0
+
+      &_address
+        background-image: url('../img/icons/flag.png')
+        background-repeat: no-repeat
+
+      &_phone
+        background-image: url('../img/icons/phone.png')
+        background-repeat: no-repeat
+
+      &_email
+        background-image: url('../img/icons/mail.png')
+        background-repeat: no-repeat
+
+    &__socials
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+
+      &-title
+        text-align: center
+        font-size: 20px
+        line-height: 32px
+        color: $black-dark
+
+    &__social
+      width: 47%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      font-size: 18px
+      line-height: 23px
+      +adaptive($mobile)
+        font-size: 12px
+        line-height: 15px
+
+      a
+        color: inherit
+
+    &__button
+      display: none
+      +adaptive($mobile)
+        display: flex
+        width: 260px !important

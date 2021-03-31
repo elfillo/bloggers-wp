@@ -1,0 +1,34 @@
+.clients
+  &__title
+    position: relative
+    width: fit-content
+
+    &::after
+      display: block
+      content: ''
+      width: 65px
+      height: 65px
+      position: absolute
+      top: calc(50% - 32px)
+      right: -15%
+      background-image: url("../img/icons/svg/face_kiss.svg")
+      background-size: contain
+      +adaptive($mobile)
+        display: none
+
+  &__list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__item
+    width: 215px
+    height: 88px
+    margin-bottom: 90px
+    +adaptive($mobile)
+      width: 80px
+      height: 45px
+      margin-bottom: 31px
+
+    img
+      height: 100%

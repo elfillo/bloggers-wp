@@ -1,0 +1,59 @@
+.error-page
+  width: 100vw
+  height: 100vh
+  margin-bottom: 0
+  display: flex
+  align-items: center
+  &__container
+    width: 100%
+    max-width: 1548px
+    display: flex
+    align-items: center
+    margin: 0 auto
+    padding: 0 14px
+    &::before
+      display: block
+      content: ''
+      width: 181px
+      height: 181px
+      +b_image('icons/svg/see-no-evil-monkey.svg')
+      position: absolute
+      bottom: -15px
+      +adaptive(940px)
+        display: none
+  &__content
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +adaptive(1460px)
+      flex-direction: column-reverse
+  &__text
+    width: 100%
+    max-width: 608px
+    color: $black
+  &__title
+    font-size: 55px
+    line-height: 1.05
+    font-weight: 500
+    margin-bottom: 34px
+    +adaptive(940px)
+      font-size: 28px
+      line-height: 1.16
+      margin-bottom: 17px
+  &__description
+    font-size: 20px
+    line-height: 32px
+    margin-bottom: 64px
+    +adaptive(940px)
+      font-size: 16px
+      line-height: 1.6
+      margin-bottom: 17px
+  &__404
+    width: 816px
+    height: 386.66px
+    +b_image('icons/svg/404.svg')
+    +adaptive(940px)
+      width: 100%
+      height: 150px
+      margin-bottom: 22px

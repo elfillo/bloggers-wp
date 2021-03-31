@@ -1,0 +1,40 @@
+.blogger-about
+  padding-bottom: 100px
+  +adaptive($mobile)
+    padding-bottom: 40px
+  &__content
+    display: flex
+    align-items: center
+    +adaptive($mobile)
+      flex-direction: column
+      justify-content: center
+
+  &__photo
+    width: 674px
+    height: 516px
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25))
+    border-radius: 20px
+    overflow: hidden
+    margin-right: 111px
+    +adaptive($mobile)
+      width: 290px
+      height: 222px
+      margin-right: 0
+      margin-bottom: 33px
+    img
+      height: 100%
+      object-fit: cover
+      border-radius: 20px
+  &__text
+    width: 100%
+    max-width: 695px
+    height: 400px
+    font-size: 18px
+    line-height: 23px
+    color: $grey-dark
+    overflow-y: scroll
+    +adaptive($mobile)
+      max-width: 100%
+      height: auto
+    p
+      margin-bottom: 20px

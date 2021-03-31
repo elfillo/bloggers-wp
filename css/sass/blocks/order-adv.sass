@@ -1,0 +1,106 @@
+.order-adv
+  position: relative
+
+  &::after
+    display: block
+    content: ""
+    width: 940px
+    height: 687px
+    background-image: url("../img/wallpapers/order-adv-graphics.png")
+    background-size: cover
+    background-repeat: no-repeat
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+    +adaptive(1360px)
+      display: none
+
+  &__content
+    width: 100%
+    max-width: 647px
+
+  &__title
+    width: 100%
+    max-width: 588px
+    margin-bottom: 43px
+    position: relative
+
+    &::before
+      display: block
+      content: ""
+      width: 120%
+      height: 178px
+      background-image: url("../img/wallpapers/order-adv-title-banner.png")
+      background-size: contain
+      background-repeat: no-repeat
+      position: absolute
+      top: -50%
+      left: -15%
+      +adaptive($mobile)
+        width: 90%
+        left: -20px
+        top: -20px
+
+  &__p
+    width: 100%
+    max-width: 410px
+    margin-bottom: 46px
+
+  &__statistics
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 37px
+
+    li
+      list-style: none
+      margin-bottom: 20px
+
+    .count
+      display: block
+      font-weight: bold
+      font-size: 35px
+      line-height: 44px
+      +adaptive($mobile)
+        font-size: 27px
+        line-height: 34px
+
+    .text
+      display: block
+      font-weight: bold
+      font-size: 19px
+      line-height: 1
+      +adaptive($mobile)
+        font-size: 15px
+
+  &__buttons
+    display: flex
+    align-items: center
+    position: relative
+    width: 100%
+    max-width: 330px
+
+    &::before
+      display: block
+      content: ""
+      width: 40px
+      height: 36px
+      background-image: url("../img/icons/svg/heart.svg")
+      background-size: contain
+      background-repeat: no-repeat
+      position: absolute
+      top: -10px
+      right: -100px
+      +adaptive($mobile)
+        display: none
+
+  &__callback
+    width: 243px
+    margin-right: 33px
+    +adaptive($mobile)
+      margin-right: 0
+
+  &__btn-circle
+    +adaptive($mobile)
+      display: none

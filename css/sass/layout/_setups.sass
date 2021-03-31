@@ -1,0 +1,83 @@
+*
+  box-sizing: border-box
+
+body, html
+  margin: 0
+  padding: 0
+  font-family: 'Geometria', sans-serif
+
+//body, html
+//  margin: 0
+//  padding: 0
+//  font-family: 'Gilroy', sans-serif
+
+ul
+  margin: 0
+  padding: 0
+
+  li
+    list-style: none
+
+a
+  text-decoration: none
+  text-underline: none
+  cursor: default
+  color: inherit
+
+button
+  border: none
+  outline: none
+  background-color: unset
+
+img
+  width: 100%
+  height: auto
+  object-fit: contain
+
+input[type='text'], input[type='email'], input[type='phone']
+  border: none
+  outline: none
+  padding: 17px 0 14px 15px
+  font-family: 'Geometria', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 23px
+  color: $grey
+
+input[type='submit']
+  &:focus
+    outline: none
+
+input:focus::-webkit-input-placeholder
+  color: transparent
+input:focus:-moz-placeholder
+  color: transparent  /* FF 4-18 */
+input:focus::-moz-placeholder
+  color: transparent  /* FF 19+ */
+input:focus:-ms-input-placeholder
+  color: transparent  /* IE 10+ */
+
+.container
+  width: 100%
+  max-width: $container
+  height: 100%
+  margin: 0 auto
+  +adaptive(1480px)
+    padding: 0 14px
+
+.logo
+  display: block
+
+section
+  margin-bottom: 100px
+  +adaptive($mobile)
+    margin-bottom: 30px
+
+.blue-gradient-background
+  background: $gr-white-blue
+  position: relative
+  z-index: 99999
+
+.no-scroll
+  overflow: hidden
