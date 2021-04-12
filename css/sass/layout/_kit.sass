@@ -239,9 +239,6 @@
   &:hover
     background-image: url("../img/icons/svg/inst-square-hover.svg")
 
-  &:focus
-    border-radius: 100%
-    border: 2px solid $blue-dark
 
   &:disabled
     background-image: url("../img/icons/svg/inst-square-disabled.svg")
@@ -270,9 +267,6 @@
   &:hover
     background-image: url("../img/icons/svg/fb-square-hover.svg")
 
-  &:focus
-    border-radius: 100%
-    border: 2px solid $blue-dark
 
   &:disabled
     background-image: url("../img/icons/svg/fb-square-disabled.svg")
@@ -301,9 +295,6 @@
   &:hover
     background-image: url("../img/icons/svg/twitter-square-hover.svg")
 
-  &:focus
-    border-radius: 100%
-    border: 2px solid $blue-dark
 
   &:disabled
     background-image: url("../img/icons/svg/twitter-square-disabled.svg")
@@ -322,3 +313,19 @@
 
   &:disabled
     background-image: url("../img/icons/svg/twitter-circle-disabled.svg")
+
+.ok
+  background-image: url("../img/icons/svg/ok-square.svg")
+  background-size: 30px
+  background-position: center
+  background-repeat: no-repeat
+  +adaptive($mobile)
+    background-size: 21px
+
+  &:hover
+    background-image: url("../img/icons/svg/ok-square-hover.svg")
+    background-size: 30px
+    background-position: center
+    background-repeat: no-repeat
+    +adaptive($mobile)
+      background-size: 21px
