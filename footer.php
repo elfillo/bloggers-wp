@@ -19,7 +19,7 @@
                 </li>
                 <?php endforeach;?>
             </ul>
-            <a href="#" target="_blank" class="btn btn_blue footer-card__button">построить маршрут</a>
+            <a href="https://2gis.ru/irkutsk/directions/points/%7C104.288866%2C52.282511%3B1548748027183343?m=104.288838%2C52.282527%2F16.09" target="_blank" class="btn btn_blue footer-card__button">построить маршрут</a>
         </div>
     </div>
     <div id="map"></div>

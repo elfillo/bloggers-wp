@@ -8,7 +8,7 @@ $(function () {
             ymaps.ready(init);
 
             function init() {
-                var center = [52.26668, 104.31239270000003];
+                var center = [52.282442, 104.288862];
 
                 var myMap = new ymaps.Map("map", {
                     center: center,
@@ -18,14 +18,14 @@ $(function () {
 
                 myMap.behaviors.disable('scrollZoom');
 
-                // var myPlacemark = new ymaps.Placemark(center, {}, {
-                //     iconLayout: 'default#image',
-                //     iconImageHref: '/wp-content/themes/baikal-story/img/logo.svg',
-                //     iconImageSize: [38, 37],
-                //     iconImageOffset: [-3, -42]
-                // });
-                //
-                // myMap.geoObjects.add(myPlacemark);
+                var myPlacemark = new ymaps.Placemark(center, {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/wp-content/themes/bloggers/img/icons/location-pin.svg',
+                    iconImageSize: [38, 37],
+                    iconImageOffset: [-3, -42]
+                });
+
+                myMap.geoObjects.add(myPlacemark);
             }
         })
 
