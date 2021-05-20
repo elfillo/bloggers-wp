@@ -45,7 +45,7 @@
                                 <ul>
 	                                <?php foreach (get_field('social_networks') as $soc):?>
                                     <li>
-                                        <div class="soc-btn_square <?php echo $soc['soc']['value']?>"></div>
+                                        <a href="<?php echo $soc['link']?>" target="_blank" class="soc-btn_square <?php echo $soc['soc']['value']?>"></a>
 	                                    <?php echo $soc['audience_reach']?>
                                     </li>
 		                            <?php endforeach;?>
